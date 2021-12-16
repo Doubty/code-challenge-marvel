@@ -27,7 +27,6 @@ export default function MainScreen() {
 	useEffect(() => getListComics() ,[]);
 
 
-	
 
   return (
     <div>
