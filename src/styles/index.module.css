@@ -1,153 +1,143 @@
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ececec;
+	min-height: 100vh;
+	padding: 4rem 0;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #ececec;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  background-color: #202020;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 2rem 0;
+	border-top: 1px solid #eaeaea;
+	background-color: #202020;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
-  
-
-
 
 .footer h3 a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: 0.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  color: #EC1D24;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	margin-left: 0.5rem;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	color: #ec1d24;
 }
 
 .footer h3 a:hover {
-
-  color: #9F0812;
+	color: #9f0812;
 }
-
 
 .footer h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  color: #ECECEC;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	margin-left: 1rem;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	color: #ececec;
 }
 
-
-
 .reloadButton {
-    
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 3px solid #EC1D24;
-    background-color: #EC1D24;
-    margin: 20px;
-    position: relative;
-    color: white;
-    letter-spacing: 1px;
-  }
-  
-  .reloadButton:before {
-    font-weight: 50px;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: #ECECEC;
-    border: 3px solid #EC1D24;
-    transform: rotate(45deg);
-    position: absolute;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 0;
-    top: -12px;
-    left: -13px;
-  }
-  .reloadButton:after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: #ECECEC;
-    border: 3px solid #EC1D24;
-    transform: rotate(-132deg);
-    position: absolute;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 0;
-    top: auto;
-    right: -13px;
-    bottom: -12px;
-  }
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 3px solid #ec1d24;
+	background-color: #ec1d24;
+	margin: 20px;
+	position: relative;
+	color: white;
+	letter-spacing: 1px;
+}
 
-  .reloadButton:hover{
-    background-color: #9F0812; 
-    color: white;
+.reloadButton:before {
+	font-weight: 50px;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: #ececec;
+	border: 3px solid #ec1d24;
+	transform: rotate(45deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: -12px;
+	left: -13px;
+}
+.reloadButton:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: #ececec;
+	border: 3px solid #ec1d24;
+	transform: rotate(-132deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: auto;
+	right: -13px;
+	bottom: -12px;
+}
 
-  }
+.reloadButton:hover {
+	background-color: #9f0812;
+	color: white;
+}
 
 @media screen and (max-width: 1024px) {
-  .footer a {
-    font-size: 14px;
-  }
+	.footer a {
+		font-size: 14px;
+	}
 }
 
 .gridComic:hover {
-    z-index: 9 !important;
+	z-index: 9 !important;
 }
 
 .line {
-    margin-top: 1rem;
-    background-color: #EC1D24;
-    width: 100%;
-    height: 0.3rem;
-
-  }
+	margin-top: 1rem;
+	background-color: #ec1d24;
+	width: 100%;
+	height: 0.3rem;
+}

@@ -1,58 +1,52 @@
 .CardComic {
-  cursor: pointer;
-  background-size: cover;
-  background-position: center;
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
-
+	cursor: pointer;
+	background-size: cover;
+	background-position: center;
+	transform-origin: center;
+	transform: scale(1) translateZ(0);
+	transition: filter 200ms linear, transform 200ms linear;
 }
 
 .CardComic:hover {
-  cursor: pointer;
-  color: white;
-  background-color: white;
-  box-shadow: 0 1rem 2rem rgba(black, .4);
-  transform: rotate(5deg) scale(1.5);
-  padding: 2px;
-  
+	cursor: pointer;
+	color: white;
+	background-color: white;
+	box-shadow: 0 1rem 2rem rgba(black, 0.4);
+	transform: rotate(5deg) scale(1.5);
+	padding: 2px;
 }
 
-
 .CardComic:hover .titlecomic {
-  color: #ec1d24;
-  
+	color: #ec1d24;
 }
 
 .CardComic:hover .authorcomic {
-  color: #ec1d24a1;
+	color: #ec1d24a1;
 }
 
 .CardComic:hover .midia {
-  height: 65%;
-  -webkit-transition: .5s;
-  transition: .5s;
+	height: 65%;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
 }
 
 .CardComic:hover .readme {
-  display: block;
-  -webkit-transition: 1s;
-  transition: 1s;
+	display: block;
+	-webkit-transition: 1s;
+	transition: 1s;
 }
 
 .midia {
-  height: 75%;
-  -webkit-box-shadow: 0 0 1em #202020;
-          box-shadow: 0 0 1em #202020;
-  background: transparent;
-  -webkit-transition: .2s;
-  transition: .2s;
+	height: 75%;
+	-webkit-box-shadow: 0 0 1em #202020;
+	box-shadow: 0 0 1em #202020;
+	background: transparent;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
 }
 
 .readme {
-  display: none;
-  -webkit-transition: .5s;
-  transition: .5s;
+	display: none;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
 }

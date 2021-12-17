@@ -1,51 +1,99 @@
-
 .buttonConfirm {
-    
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 3px solid #EC1D24;
-    background-color: #EC1D24;
-    margin: 20px;
-    position: relative;
-    color: white;
-    letter-spacing: 1px;
-  }
-  
-  .buttonConfirm:before {
-    font-weight: 50px;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 3px solid #EC1D24;
-    transform: rotate(45deg);
-    position: absolute;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 0;
-    top: -12px;
-    left: -13px;
-  }
-  .buttonConfirm:after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 3px solid #EC1D24;
-    transform: rotate(-132deg);
-    position: absolute;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 0;
-    top: auto;
-    right: -13px;
-    bottom: -12px;
-  }
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 3px solid #ec1d24;
+	background-color: #ec1d24;
+	margin: 20px;
+	position: relative;
+	color: white;
+	letter-spacing: 1px;
+}
 
-  .buttonConfirm:hover{
-    background-color: #9F0812; 
-    color: white;
+.buttonConfirm:before {
+	font-weight: 50px;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: white;
+	border: 3px solid #ec1d24;
+	transform: rotate(45deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: -12px;
+	left: -13px;
+}
+.buttonConfirm:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: white;
+	border: 3px solid #ec1d24;
+	transform: rotate(-132deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: auto;
+	right: -13px;
+	bottom: -12px;
+}
 
-  }
+.buttonConfirm:hover {
+	background-color: #9f0812;
+	color: white;
+}
+
+.buttonClose {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 10px;
+	border: 3px solid #ec1d24;
+	background-color: #ec1d24;
+	margin: 12px;
+	position: relative;
+	color: #ececec;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 5px;
+}
+
+.buttonClose:before {
+	font-weight: 50px;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: #ececec;
+	border: 3px solid #ec1d24;
+	transform: rotate(45deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: -12px;
+	left: -13px;
+}
+.buttonClose:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: #ececec;
+	border: 3px solid #ec1d24;
+	transform: rotate(-132deg);
+	position: absolute;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	top: auto;
+	right: -13px;
+	bottom: -12px;
+}
+
+.buttonClose:hover {
+	background-color: #9f0812;
+	color: #ececec;
+}
