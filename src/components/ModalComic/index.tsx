@@ -69,7 +69,7 @@ function ChildModal(props) {
 			>
 				<Box sx={{ ...style, height: "90%", py: 0, px: 0 }}>
 					<Map />
-					<Button className={styles.buttonClose} onClick={handleClose}>
+					<Button onClick={handleClose} sx={{ position: "absolute", top: "5px", color: "black" }}>
 						<CancelIcon fontSize="large" />
 					</Button>
 				</Box>

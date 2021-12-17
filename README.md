@@ -10,7 +10,7 @@ Projeto foi desenvolvido como desafio frontend para a vaga da empresa Brisanet
 - MUI (Material UI)
 - Axios
 
-O projeto pode ser visualizado no vercel, [clicando aqui](https://)
+O projeto pode ser visualizado no vercel, [clicando aqui](https://code-challenge-marvel-deploy.vercel.app/)
 
 ## Instalação de dependências e inicialização do projeto localmente
 
