@@ -48,68 +48,67 @@ export default function Map() {
 		mapRef.current = map;
 	}, []);
 
-	if (loadError) return "Erro ao carregar";
-	if (!isLoaded) return "Carregando...";
-
 	return (
-		<Container maxWidth="lg">
-			<Grid item xs={12}>
-				<Typography
-					variant="h4"
-					noWrap
-					align="center"
-					component="div"
-					sx={{ mb: 2, mt: 5, fontSize: { xs: "1.7rem", md: "2rem" } }}
-				>
-					Clique no mapa e selecione o endereço para entrega 📌
-					<hr className={styles.line} />
-				</Typography>
-			</Grid>
-
-			<GoogleMap
-				id="map"
-				mapContainerStyle={mapContainerStyle}
-				zoom={7}
-				center={center}
-				options={options}
-				onClick={onMapClick}
-				onLoad={onMapLoad}
-			>
-				{markers.map((marker) => (
-					<Marker
-						key={`${marker.lat}-${marker.lng}`}
-						position={{ lat: marker.lat, lng: marker.lng }}
-						onClick={() => {
-							setSelected(marker);
-						}}
-						icon={{
-							url: "https://agiletrendsbr.com/2021/wp-content/uploads/2015/11/red-pin-hi.png",
-							origin: new window.google.maps.Point(0, 0),
-							anchor: new window.google.maps.Point(20, 15),
-							scaledSize: new window.google.maps.Size(40, 50),
-						}}
-					/>
-				))}
-
-				{selected ? (
-					<InfoWindow
-						position={{ lat: selected.lat, lng: selected.lng }}
-						onCloseClick={() => {
-							setSelected(null);
-						}}
+		<>
+			<Container maxWidth="lg">
+				<Grid item xs={12}>
+					<Typography
+						variant="h4"
+						noWrap
+						align="center"
+						component="div"
+						sx={{ mb: 2, mt: 5, fontSize: { xs: "1.7rem", md: "2rem" } }}
 					>
-						<div>
-							<h2>
-								<span role="img" aria-label="Entrega">
-									📦
-								</span>{" "}
-								Local de entrega
-							</h2>
-							<p>Horário de agendamento {formatRelative(selected.time, new Date())}</p>
-						</div>
-					</InfoWindow>
-				) : null}
-			</GoogleMap>
-		</Container>
+						Clique no mapa e selecione o endereço para entrega 📌
+						<hr className={styles.line} />
+					</Typography>
+				</Grid>
+
+				<GoogleMap
+					id="map"
+					mapContainerStyle={mapContainerStyle}
+					zoom={7}
+					center={center}
+					options={options}
+					onClick={onMapClick}
+					onLoad={onMapLoad}
+				>
+					{markers.map((marker) => (
+						<Marker
+							key={`${marker.lat}-${marker.lng}`}
+							position={{ lat: marker.lat, lng: marker.lng }}
+							onClick={() => {
+								setSelected(marker);
+							}}
+							icon={{
+								url: "https://agiletrendsbr.com/2021/wp-content/uploads/2015/11/red-pin-hi.png",
+								origin: new window.google.maps.Point(0, 0),
+								anchor: new window.google.maps.Point(20, 15),
+								scaledSize: new window.google.maps.Size(40, 50),
+							}}
+						/>
+					))}
+
+					{selected ? (
+						<InfoWindow
+							position={{ lat: selected.lat, lng: selected.lng }}
+							onCloseClick={() => {
+								setSelected(null);
+							}}
+						>
+							<div>
+								<h2>
+									<span role="img" aria-label="Entrega">
+										📦
+									</span>{" "}
+									Local de entrega
+								</h2>
+								<p>Horário de agendamento {formatRelative(selected.time, new Date())}</p>
+							</div>
+						</InfoWindow>
+					) : null}
+				</GoogleMap>
+			</Container>
+		</>
 	);
 }
