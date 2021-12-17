@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyles";
 
-const libraries = ["places"];
+const libraries: any = ["places"];
 const mapContainerStyle = {
 	height: "70vh",
 	width: "100%",
@@ -26,6 +26,7 @@ const center = {
 export default function Map() {
 	const { isLoaded, loadError } = useLoadScript({
 		googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+		/*eslint-disable */
 		libraries,
 	});
 	const [markers, setMarkers] = React.useState([]);
@@ -45,11 +46,6 @@ export default function Map() {
 	const mapRef = React.useRef();
 	const onMapLoad = React.useCallback((map) => {
 		mapRef.current = map;
-	}, []);
-
-	const panTo = React.useCallback(({ lat, lng }) => {
-		mapRef.current.panTo({ lat, lng });
-		mapRef.current.setZoom(14);
 	}, []);
 
 	if (loadError) return "Erro ao carregar";
