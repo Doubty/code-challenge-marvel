@@ -47,8 +47,18 @@ export default function Map() {
 		mapRef.current = map;
 	}, []);
 
-	if (loadError) return "Error";
-	if (!isLoaded) return "Loading...";
+	if (loadError)
+		return (
+			<>
+				<p> Erro </p>
+			</>
+		);
+	if (!isLoaded)
+		return (
+			<>
+				<p> Carregando... </p>
+			</>
+		);
 
 	return (
 		<>
