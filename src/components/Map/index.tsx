@@ -6,7 +6,6 @@ import { Typography, Container } from "@mui/material";
 import styles from "./styles.module.css";
 import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyles";
-
 const libraries: any = ["places"];
 const mapContainerStyle = {
 	height: "70vh",
@@ -47,6 +46,9 @@ export default function Map() {
 	const onMapLoad = React.useCallback((map) => {
 		mapRef.current = map;
 	}, []);
+
+	if (loadError) return "Error";
+	if (!isLoaded) return "Loading...";
 
 	return (
 		<>
